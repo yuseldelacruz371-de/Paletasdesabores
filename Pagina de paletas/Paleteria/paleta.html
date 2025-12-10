@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paletería Dulce Frío</title>
+    <link rel="stylesheet" href="paletas.css">
+</head>
+<body>
+
+    <header>
+        <h1>Paletería Dulce Frío</h1>
+        <button id="btnCarrito" class="cart-button" onclick="toggleCarrito()">
+            🛒 <span id="contadorCarrito">0</span>
+        </button>
+    </header>
+
+    <main>
+
+        <div class="menu-botones">
+            <button class="boton-categoria" onclick="mostrarSeccion('agua')">Paletas de Agua</button>
+            <button class="boton-categoria" onclick="mostrarSeccion('leche')">Paletas de Leche</button>
+        </div>
+
+        <!-- SECCIÓN AGUA -->
+        <section id="agua" class="seccion">
+            <h2>Paletas de Agua</h2>
+            <div class="grid">
+
+                <div class="card">
+                    <img src="imagenes/paleta de fresa.jpg">
+                    <h3>Fresa</h3>
+                    <p>Refrescante y natural.</p>
+                    <span>$15</span>
+                    <button onclick="agregarAlCarrito('Fresa', 15, 'imagenes/paleta de fresa.jpg')">Agregar</button>
+                </div>
+
+                <div class="card">
+                    <img src="imagenes/paleta de limon.jpg">
+                    <h3>Limón</h3>
+                    <p>Ácido y delicioso.</p>
+                    <span>$15</span>
+                    <button onclick="agregarAlCarrito('Limón', 15, 'imagenes/paleta de limon.jpg')">Agregar</button>
+                </div>
+
+                <div class="card">
+                    <img src="imagenes/paleta de mango.jpg">
+                    <h3>Mango</h3>
+                    <p>Dulce y tropical.</p>
+                    <span>$18</span>
+                    <button onclick="agregarAlCarrito('Mango', 18, 'imagenes/paleta de mango.jpg')">Agregar</button>
+                </div>
+
+                <div class="card">
+                    <img src="imagenes/paleta de tamarindo.jpg">
+                    <h3>Tamarindo</h3>
+                    <p>Agridulce y sabrosa.</p>
+                    <span>$18</span>
+                    <button onclick="agregarAlCarrito('Tamarindo', 18, 'imagenes/paleta de tamarindo.jpg')">Agregar</button>
+                </div>
+
+                <div class="card">
+                    <img src="imagenes/paleta de orchata.jpg">
+                    <h3>Horchata</h3>
+                    <p>Refrescante y única.</p>
+                    <span>$15</span>
+                    <button onclick="agregarAlCarrito('Horchata', 15, 'imagenes/paleta de orchata.jpg')">Agregar</button>
+                </div>
+
+                <div class="card">
+                    <img src="imagenes/paleta de pepino.jpg">
+                    <h3>Pepino</h3>
+                    <p>Muy refrescante.</p>
+                    <span>$15</span>
+                    <button onclick="agregarAlCarrito('Pepino', 15, 'imagenes/paleta de pepino.jpg')">Agregar</button>
+                </div>
+
+                <div class="card">
+                    <img src="imagenes/paleta de sandias.png">
+                    <h3>Sandía</h3>
+                    <p>Dulce y jugosa.</p>
+                    <span>$15</span>
+                    <button onclick="agregarAlCarrito('Sandía', 15, 'imagenes/paleta de sandias.png')">Agregar</button>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECCIÓN LECHE -->
+        <section id="leche" class="seccion">
+            <h2>Paletas de Leche</h2>
+            <div class="grid">
+
+                <div class="card">
+                    <img src="imagenes/paleta de oreo.jpg">
+                    <h3>Oreo</h3>
+                    <p>Galleta cremosa.</p>
+                    <span>$20</span>
+                    <button onclick="agregarAlCarrito('Oreo', 20, 'imagenes/paleta de oreo.jpg')">Agregar</button>
+                </div>
+
+                <div class="card">
+                    <img src="imagenes/paleta de nuez.jpg">
+                    <h3>Nuez</h3>
+                    <p>Cremosa con trocitos.</p>
+                    <span>$20</span>
+                    <button onclick="agregarAlCarrito('Nuez', 20, 'imagenes/paleta de nuez.jpg')">Agregar</button>
+                </div>
+
+                <div class="card">
+                    <img src="imagenes/paleta de cajeta.jpg">
+                    <h3>Cajeta</h3>
+                    <p>Dulce tradicional.</p>
+                    <span>$20</span>
+                    <button onclick="agregarAlCarrito('Cajeta', 20, 'imagenes/paleta de cajeta.jpg')">Agregar</button>
+                </div>
+
+                <div class="card">
+                    <img src="imagenes/paleta de cholocate.jpg">
+                    <h3>Chocolate</h3>
+                    <p>Cremoso y dulce.</p>
+                    <span>$20</span>
+                    <button onclick="agregarAlCarrito('Chocolate', 20, 'imagenes/paleta de cholocate.jpg')">Agregar</button>
+                </div>
+
+                <div class="card">
+                    <img src="imagenes/paleta de fresas con crema.jpg">
+                    <h3>Fresa con Leche</h3>
+                    <p>Suave y cremosa.</p>
+                    <span>$20</span>
+                    <button onclick="agregarAlCarrito('Fresa con Leche', 20, 'imagenes/paleta de fresas con crema.jpg')">Agregar</button>
+                </div>
+
+                <div class="card">
+                    <img src="imagenes/paleta de galleta.jpg">
+                    <h3>Galleta maria</h3>
+                    <p>Tipo chispas.</p>
+                    <span>$20</span>
+                    <button onclick="agregarAlCarrito('Galleta', 20, 'imagenes/paleta de galleta.jpg')">Agregar</button>
+                </div>
+
+                <div class="card">
+                    <img src="imagenes/paleta de platano.jpg">
+                    <h3>Plátano</h3>
+                    <p>Cremoso y natural.</p>
+                    <span>$20</span>
+                    <button onclick="agregarAlCarrito('Plátano', 20, 'imagenes/paleta de platano.jpg')">Agregar</button>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- CARRITO DESPLEGABLE -->
+    <div id="carrito" class="carrito oculto">
+        <h3>Carrito</h3>
+        <div id="listaCarrito"></div>
+        <p class="total">Total: $<span id="totalCarrito">0</span></p>
+        <button onclick="enviarWhatsApp()" class="whatsapp-btn">Enviar pedido por WhatsApp</button>
+    </div>
+
+<script src="paletass.js"></script>
+</body>
+</html>
